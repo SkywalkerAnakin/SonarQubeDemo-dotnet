@@ -2,7 +2,9 @@ trigger:
 - master
 
 pool:
-  vmImage: 'windows-latest'
+    name: sonar-agent
+    demands:
+    - agent.name -equals sonar-agent
 
 variables:
   solution: '**/*.sln'
