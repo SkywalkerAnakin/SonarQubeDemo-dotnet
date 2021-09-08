@@ -2,9 +2,7 @@ trigger:
 - master
 
 pool:
-    name: sonar-agent
-    demands:
-    - agent.name -equals sonar-agent
+  name: sonar-agent
 
 variables:
   solution: '**/*.sln'
